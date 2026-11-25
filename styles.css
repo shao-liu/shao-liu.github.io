@@ -224,6 +224,10 @@ h2 {
   font-variant-numeric: tabular-nums;
 }
 
+.paper-separator, .paper-reference::before {
+  white-space: pre;
+}
+
 .timeline-group + .timeline-group {
   margin-top: 1.5rem;
 }
@@ -371,12 +375,11 @@ h2 {
   }
 
   .paper-meta {
-    column-gap: 0.5rem;
+    column-gap: 0;
   }
 
   .paper-reference::before {
-    content: "·";
-    margin-inline-end: 0.5rem;
+    content: " · ";
   }
 }
 
