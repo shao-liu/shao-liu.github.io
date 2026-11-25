@@ -10,7 +10,8 @@
   --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --gutter: clamp(1.125rem, 5vw, 3.5rem);
   --aside: 15.5rem;
-  --heading-gap: clamp(1rem, 2.4vw, 1.35rem);
+  --section-space: clamp(1.45rem, 3.3vw, 2rem);
+  --heading-gap: clamp(0.7rem, 1.55vw, 0.95rem);
 }
 
 html {
@@ -109,7 +110,7 @@ h1, h2, h3, p, dl, dd {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   row-gap: var(--heading-gap);
-  padding-block: clamp(1.375rem, 3.5vw, 2.125rem);
+  padding-block: var(--section-space);
   scroll-margin-top: 1rem;
 }
 
@@ -168,17 +169,17 @@ h1 {
 }
 
 .content-section {
-  padding-block: clamp(1.6rem, 4vw, 2.65rem);
+  padding-block: var(--section-space);
   border-top: 1px solid var(--line);
   scroll-margin-top: 1rem;
 }
 
 h2 {
   margin-bottom: var(--heading-gap);
-  font-size: clamp(1.35rem, 2.5vw, 1.55rem);
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
+  font-size: clamp(1.25rem, 2.2vw, 1.4rem);
+  font-weight: 450;
+  letter-spacing: -0.018em;
+  line-height: 1.25;
 }
 
 .paper-list {
@@ -201,7 +202,7 @@ h2 {
   font-weight: 500;
   line-height: 1.4;
   overflow-wrap: anywhere;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 
 .authors, .paper-reference, .timeline dt {
