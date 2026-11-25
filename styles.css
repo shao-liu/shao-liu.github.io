@@ -288,6 +288,11 @@ h2 {
   white-space: nowrap;
 }
 
+#teaching .timeline dd {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
 .timeline > div {
   display: grid;
   grid-template-columns: var(--date-width, 7rem) minmax(0, 1fr);
@@ -363,6 +368,15 @@ h2 {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: baseline;
     padding-bottom: 1.15rem;
+  }
+
+  .paper-meta {
+    column-gap: 0.5rem;
+  }
+
+  .paper-reference::before {
+    content: "·";
+    margin-inline-end: 0.5rem;
   }
 }
 
