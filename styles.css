@@ -235,8 +235,18 @@ h2 {
   --date-width: 5.75rem;
 }
 
+#teaching {
+  --course-gap: 0.7rem;
+}
+
+#teaching .timeline-group h3 {
+  margin-bottom: var(--course-gap);
+  font-weight: 500;
+}
+
 #teaching .timeline {
   --date-width: 8.25rem;
+  gap: var(--course-gap);
 }
 
 #teaching .timeline dt {
